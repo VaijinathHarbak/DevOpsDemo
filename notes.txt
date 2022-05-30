@@ -1,0 +1,109 @@
+DevOps Phases
+	- Continuous Development
+	- Continuous Testing
+	- Continuous Intgration
+	- Continuous Deployment
+	- Continuous Monitoring
+
+Version Control
+Git
+Git Installation
+Git Lifecycle
+	- Working Directory
+	- Initialization
+	- Staging(can include or exclued from commit)
+	- Local Storage (Commit)
+	- Push to GitHub(Cloud Server)
+
+Git Common Command
+	Git Init
+		This is used for initializing your local folder(working directory) as local Git Repository.
+	Git status
+		This is used for checking the status of your local Git Repository. Like, what are the updated or newly added file to your local git repository.
+	Git add <filename>
+		This is used for adding all the updated or newly added file to the staging area so that you can commit those files to your local Git Repository.
+	Git commit -m "<comment>“
+		This is used for saving or commit the staged changes to your local Git Repository.
+	git remote add origin <remote repo path>
+		This is used for mapping your remote git repository with your local Git Repository. So that when you push the committed changes, those will get pushed to your remote repository
+	git push –u origin main
+		This is used to push you committed changes to you remote repository.
+	
+
+Advanced commands
+	git clone
+		cloning/getting your existing remote repository to you local
+	git pull
+		get/download the latest chages from the remote branch
+	git fetch
+		fetch down all the branches from remote repository
+	git branch
+		list all the branches from your local repository. A '*' will appear next to the current active branch
+	git branch <branch name>
+		Creates new branch
+	git checkout <branch name>
+		switch to the given branch
+	
+	git reset <file name>
+		unstage but keeps the changes in the working derectory for the given file
+	git restore --stage <filename>
+		unstage and undo changes from the working directory
+	git reset head~1
+		undoing your last one commit
+	git cherry-pick <commit-hash>
+
+	
+
+Master/Main branch 
+	Develop - Integration branch which is used to interate the different branches from different developers.
+		feature branches - by different developer
+
+Pull request - pull is used o merge your feature branch into the parent branch.
+	
+Containerization:
+	lets say we have created or built an application with different libraries and dependencies
+	Dev Env: Python 5.4.3 and pycharm IDE
+	QA Env : Python 5.3.0 and spider IDE
+
+	when the application or the code gets deployed to QA environment. it failed to run because there is a difference in python version and IDE.
+
+	To resolve this issue we make use of containerization.
+
+	What is Container: Container is a softwre that wrap up all the component of a code and all its dependencies
+	into a single deployeble unit that can be used on different servers and systems.
+
+Docker:
+	Docker is a containerization tool that helps in developing, building, deploying and executing
+softwere in isolation. It does by creating containers that completly wrap a softwere.
+
+Docker Installation:
+	
+
+---------------------
+DevOps Overview 
+What is DevOps
+Why DevOps
+Waterfall Model
+Technical Definition of DevOps
+Phases of DevOps
+Who is DevOps Engineer
+Version Control
+What is git
+Git Installation
+Common Git Commands
+Issues before containerization
+What is Docker
+Docker Installation 
+Common docker commands
+Docker environment
+Docker file
+
+------------------------
+Heirarchy of Git
+	- Repository
+	- Branch (can have multiple branches) 	
+
+
+
+
+
