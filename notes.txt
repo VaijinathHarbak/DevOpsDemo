@@ -59,7 +59,13 @@ Master/Main branch
 		feature branches - by different developer
 
 Pull request - pull is used o merge your feature branch into the parent branch.
-	
+
+JDK download
+https://www.oracle.com/java/technologies/downloads/
+
+Jenkins Installation Video
+https://www.youtube.com/watch?v=MlvNXFdPhB8
+-----------------------------	
 Containerization:
 	lets say we have created or built an application with different libraries and dependencies
 	Dev Env: Python 5.4.3 and pycharm IDE
