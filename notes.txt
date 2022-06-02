@@ -69,6 +69,8 @@ Jenkins Installation Video
 https://www.youtube.com/watch?v=MlvNXFdPhB8
 
 -----------------------------	
+
+-----------------------------
 Containerization:
 	lets say we have created or built an application with different libraries and dependencies
 	Dev Env: Python 5.4.3 and pycharm IDE
@@ -100,19 +102,16 @@ Version Control
 What is git
 Git Installation
 Common Git Commands
-Issues before containerization
-What is Docker
-Docker Installation 
-Common docker commands
-Docker environment
-Docker file
+Why Continuous integration?
+What is Jenkins?
+What are Jenkins Features?
+Jenkins architecture
+Jenkins installation & setup
+Setting up a CI/CD pipeline
+
 
 ------------------------
 Heirarchy of Git
 	- Repository
 	- Branch (can have multiple branches) 	
-
-
-
-
 
