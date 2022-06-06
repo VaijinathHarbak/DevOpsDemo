@@ -68,7 +68,12 @@ https://www.oracle.com/java/technologies/downloads/
 Jenkins Installation Video
 https://www.youtube.com/watch?v=MlvNXFdPhB8
 
------------------------------	
+Jenkins full course 
+https://www.youtube.com/watch?v=FX322RVNGj4
+--------------------------------
+Create Agent in Jenkins
+After configuring Agent in jenkins make the connection to that agent to start it
+javaws http://localhost:8080/computer/Agent1/jenkins-agent.jnlp
 
 -----------------------------
 Containerization:
