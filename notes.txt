@@ -68,6 +68,7 @@ https://www.oracle.com/java/technologies/downloads/
 Jenkins Installation Video
 https://www.youtube.com/watch?v=MlvNXFdPhB8
 
+<<<<<<< Updated upstream
 Jenkins full course 
 https://www.youtube.com/watch?v=FX322RVNGj4
 --------------------------------
@@ -76,6 +77,35 @@ After configuring Agent in jenkins make the connection to that agent to start it
 javaws http://localhost:8080/computer/Agent1/jenkins-agent.jnlp
 
 https://github.com/VaijinathHarbak/NodeJS-BookAPI.git
+=======
+-----------------------------	
+open jenkins Server: Dashboard
+http:\\localhost:8080
+
+click on "Manage Jenkins" from left panel
+
+click on "Manage Node and Clouds"
+
+click on "New Node" to create new Agent/Node
+
+Provide the details for new node and click on Save, it
+
+Enable the jnlp settings:
+	click on "Manage Jenkins" from left panel
+	Click on "Configure Global Security"
+	Locate the "TCP Port for Inbound Ajent" 
+	Select "Random"
+	Click on "Save"
+
+Connect your Agent to Jenkins Executor:
+	Click on your Agent created "Demo-Node"
+	Click on "Launch" button, it will download agent file
+	Open the command prompt and paste below command and hit enter
+		javaws http://localhost:8080/computer/Demo%5FNode/jenkins-agent.jnlp
+	it start a java application which will connect your agent to Jenkins Executor
+
+
+>>>>>>> Stashed changes
 
 -----------------------------
 Containerization:
