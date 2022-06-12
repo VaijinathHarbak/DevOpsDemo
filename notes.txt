@@ -99,6 +99,29 @@ Connect your Agent to Jenkins Executor:
 
 
 ---------------------
+Download MSBuild
+https://www.microsoft.com/en-us/download/details.aspx?id=48159
+
+Download Nuget exe
+https://www.nuget.org/downloads
+---------------------
+steps for building .net web application and publish it
+Clone a project from a Repository
+Check out the branch from a repository
+Restore the project Nuget packages
+Build project solution
+Generate project build release file for deployment
+-------------------------
+command-line argument for webDeploy 
+/p:Configuration=Release
+/p:DeployOnBuild=True
+/p:DeployDefaultTarget=WebPublish
+/p:WebPublishMethod=FileSystem
+/p:DeleteExistingFiles=True
+/p:publishUrl="D:\Build Location"
+------------------------
+https://www.freecodespot.com/blog/continuous-deployment-using-jenkins-in-dotnet/
+------------------------
 DevOps Overview 
 What is DevOps
 Why DevOps
