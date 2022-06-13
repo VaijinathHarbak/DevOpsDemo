@@ -122,6 +122,17 @@ command-line argument for webDeploy
 ------------------------
 https://www.freecodespot.com/blog/continuous-deployment-using-jenkins-in-dotnet/
 ------------------------
+pipeline {
+    agent any
+    stages {
+        stage('build') {
+            steps {
+                echo   Hello World
+			}
+        }
+    }
+}
+------------------------
 DevOps Overview 
 What is DevOps
 Why DevOps
