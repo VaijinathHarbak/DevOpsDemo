@@ -72,30 +72,67 @@ Jenkins full course
 https://www.youtube.com/watch?v=FX322RVNGj4
 --------------------------------
 Create Agent in Jenkins
-After configuring Agent in jenkins make the connection to that agent to start it
-javaws http://localhost:8080/computer/Agent1/jenkins-agent.jnlp
+open jenkins Server: Dashboard
+http:\\localhost:8080
 
------------------------------
-Containerization:
-	lets say we have created or built an application with different libraries and dependencies
-	Dev Env: Python 5.4.3 and pycharm IDE
-	QA Env : Python 5.3.0 and spider IDE
+click on "Manage Jenkins" from left panel
 
-	when the application or the code gets deployed to QA environment. it failed to run because there is a difference in python version and IDE.
+click on "Manage Node and Clouds"
 
-	To resolve this issue we make use of containerization.
+click on "New Node" to create new Agent/Node
 
-	What is Container: Container is a softwre that wrap up all the component of a code and all its dependencies
-	into a single deployeble unit that can be used on different servers and systems.
+Provide the details for new node and click on Save, it
 
-Docker:
-	Docker is a containerization tool that helps in developing, building, deploying and executing
-softwere in isolation. It does by creating containers that completly wrap a softwere.
+Enable the jnlp settings:
+	click on "Manage Jenkins" from left panel
+	Click on "Configure Global Security"
+	Locate the "TCP Port for Inbound Ajent" 
+	Select "Random"
+	Click on "Save"
 
-Docker Installation:
-	
+Connect your Agent to Jenkins Executor:
+	Click on your Agent created "Demo-Node"
+	Click on "Launch" button, it will download agent file
+	Open the command prompt and paste below command and hit enter
+		javaws http://localhost:8080/computer/Demo%5FNode/jenkins-agent.jnlp
+	it start a java application which will connect your agent to Jenkins Executor
+
 
 ---------------------
+Download MSBuild
+https://www.microsoft.com/en-us/download/details.aspx?id=48159
+
+Download Nuget exe
+https://www.nuget.org/downloads
+---------------------
+steps for building .net web application and publish it
+Clone a project from a Repository
+Check out the branch from a repository
+Restore the project Nuget packages
+Build project solution
+Generate project build release file for deployment
+-------------------------
+command-line argument for webDeploy 
+/p:Configuration=Release
+/p:DeployOnBuild=True
+/p:DeployDefaultTarget=WebPublish
+/p:WebPublishMethod=FileSystem
+/p:DeleteExistingFiles=True
+/p:publishUrl="D:\Build Location"
+------------------------
+https://www.freecodespot.com/blog/continuous-deployment-using-jenkins-in-dotnet/
+------------------------
+pipeline {
+    agent any
+    stages {
+        stage('build') {
+            steps {
+                echo   Hello World
+			}
+        }
+    }
+}
+------------------------
 DevOps Overview 
 What is DevOps
 Why DevOps

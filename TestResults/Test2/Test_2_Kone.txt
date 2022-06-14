@@ -1,0 +1,107 @@
+
+
+                                         ASSIGNMENT 2
+                                      =====================
+
+
+
+
+1. What is Jenkins? 
+
+ Jenkins is an open-source tool used for Continueous Integration and Continuous Deployment. 
+With Jenkins, you can run extract some Code files (writen by developers) from GITHUB (Remote Repository), 
+build, test and deploy them in the Live Environment or Production Environment.
+
+
+2. How do you store credentials in Jenkins securely? 
+
+From the Jenkins home page (i.e. the Dashboard of the Jenkins classic UI), click Manage Jenkins > Manage Credentials. 
+Under Stores scoped to Jenkins on the right, click on Jenkins. 
+Under System, click the Global credentials (unrestricted) link to access this default domain. Click Add Credentials on the left.
+
+
+
+3. What is Continuous Integration 
+
+Continuous integration is a DevOps software development practice where developers regularly merge their code changes into a central repository, 
+after which automated builds and tests are run.
+
+
+4. What is git cherry-pick? What are the scenarios in which git cherry-pick can be used? 
+
+
+It's used to get 1 specific file from 1 of the branch to use or modify it on your current branch.
+
+Let's say you need a specific file committed and pushed to the master branch on your remote repository, you can use the "git cherry-pick" 
+command to get that file from that master to your current branch within the Local Repository to use.
+
+5. How can you set up a Jenkins job? 
+
+Go to Jenkins top page, select “New Job”, then choose “Build a free-style software project”. Now you can tell the elements of this freestyle job: Optional SCM, 
+such as CVS or Subversion where your source code resides. Optional triggers to control when Jenkins will perform builds.
+
+6. How can you create and assign roles in Jenkins? 
+
+Once Jenkins connected:
+
+a- login with the admin user account and navigate to Jenkins > Manage Jenkins > Manage Plugins > Available > Filter.
+b- Type “Role-based Authorization Strategy” in the filter box and hit enter.
+c- Select plugin and click the “Download now and install after restart“. Then, Restart Jenkins by clicking on check box.
+d- After plugin installation, navigate to “Jenkins > Configure Global Security“. Tick Enable security and Role-Based Strategy then save settings.
+e- Go to “Jenkins >  Manage and Assign Roles > Manage Roles“.
+f- Provide role name to create on Role to add and click ‘Add“.
+g- Tick appropriate values for your new role, in my case, I’m creating view only user so it will have.
+
+   ==> Read under Overall
+   ==> All under View
+
+h- You can also create “Project roles” which will work for all projects with that matches specified pattern.
+i- Slave roles can also be created in a similar way.
+
+      [ Assign roles to users ]
+
+j- Go to “Jenkins >  Manage and Assign Roles > Assign Roles“.
+k- Login as user with assigned role. Only projects granted should be visible.
+o- For any new user created without being assigned a role, access denied message should be shown.
+
+
+
+7. What is the difference between git checkout [branch name] and git checkout -b [branch name]? 
+
+
+ The Difference between "git checkout" and "git checkout -b " is that:
+
+- "git checkout [branch name]": is used to switch from one branch to another.
+
+- "git checkout -b [branch name] ": is used to create a New branch and switch to directly to that new branch after creating it.
+
+
+8. What is the difference between cherry-pick and pull request? 
+
+ - Cherry-pick : is used to get 1 specific file from 1 of the branch to use or modify it on your current branch.
+
+ - Pull request: is used to merge some changes from the child branch to the parent branch. 
+
+
+
+9. How to install a plugin in Jenkins? 
+
+
+Step 1: To install a plugin, go to the Jenkins Dashboard and click on Manage Jenkins. 
+Step 2: Scroll down and select Manage Plugins. 
+Step 3: Go to the Available tab and in the filter option, search for the plugins which you want to install. 
+Step 4: Select that plugins and click on Install without restart button.
+
+10. What is agent and how to create agent?
+
+
+Agent is a server with the appropriate Operating System and the tools installed and configured.
+
+To Create an agent:
+
+a- Go to the Dialogflow ES Console.
+b- If requested, sign in to the Dialogflow Console. ...
+c- Click Create Agent in the left sidebar menu. ...
+d- Enter your agent's name, default language, and default time zone.
+e- If you have already created a project, enter that project. ...
+f- Click the Create button.

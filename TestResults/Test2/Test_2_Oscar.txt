@@ -1,0 +1,33 @@
+1. what is jenkins
+Jenkins is an open source automation server that automate software development releate to bulding testing and deployment.in order to be install and run we need to install JAVA version 8 first.
+
+2. How do you store credentials in Jenkins securely?
+To store the credentials in Jenkins securely we need to good to the Jenkins page first after we click in MANAGE JENKINS from there you will see different options such as configure system Global tool configuration Manage plugins Manage Nodes and Cloud Manage credentials.....after you can click on Manage credentials and performs your actions.
+
+3. what is Continuons integration 
+Its one step of process that refers to build and testing stages of the release process.
+
+4. What is git cherry pick 
+It's a action of picking a commit from a branch and applying to another branch.
+
+5. How can you set up a Jenkins job?
+To perform a job we need to go to the dasbord create item enter the job name and the details if we want add a shell script and save its will automaticaly create the job for you.
+
+7. What is the difference between git checkout [branch name] and git checkout -b [branch name]
+The difference betwen git ckekout and git git checkout  -b creates a new branch and swith to a new branch but The git checkout -b performs run git branch operation before running git checkout.
+
+
+
+6. How can you create and assign roles in Jenkins?
+To assign roles in jenkins you have to go to the setting Manage and Assing Roles and enable the role first because by default it doesn't come with after create the role now by giving the name to the role and you save its will create this role for you.
+
+8. What is the difference between cherry-pick and pull request
+Cherry-pick is use to apply specific changes before creating or merging a pull request.
+ 
+
+9. How to install a plugin in Jenkins?
+First go th the dashboard throught Manage jenkins after you go to Manage pluggins after you search the pluggins and install it.  
+
+
+10. What is agent and how to create agent
+Agent is a machine connect to a jenkins to perform or execute the jobs.
