@@ -157,3 +157,20 @@ Heirarchy of Git
 	- Repository
 	- Branch (can have multiple branches) 	
 
+------------------------
+What Is Devops
+History of Devops
+Devops definition
+DevOps Main Objectives
+DevOps and Software Development Life Cycle
+	Waterfall Model
+	Agile Model
+Continuous Integration & Deployment
+	Jenkins
+Containers and Virtual Development
+	Docker
+	Vagrant
+Configuration Management Tools
+	Ansible
+	Puppet
+	Chef
