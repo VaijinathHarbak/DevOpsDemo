@@ -174,3 +174,9 @@ Configuration Management Tools
 	Ansible
 	Puppet
 	Chef
+-----------------------------------------------------
+Containerization-
+	
+https://docs.docker.com/get-started/02_our_app/
+https://docs.microsoft.com/en-us/windows/wsl/install-manual#step-4---download-the-linux-kernel-update-package
+https://www.google.com/search?q=docker+tutorial+for+beginners&rlz=1C1GCEB_enIN971IN971&oq=docker+tuto&aqs=chrome.2.35i39j69i57j0i512l8.17748j0j9&sourceid=chrome&ie=UTF-8#kpvalbx=_1WiyYrMsxvLBA429vIAL13
