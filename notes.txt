@@ -190,3 +190,25 @@ ENTRYPOINT ["/usr/sbin/nginx","-g","daemon off;"]
 EXPOSE 80
 ------------------------
 https://docker-curriculum.com/
+----------------------------------
+Kubernetes
+
+Download and Install kubectl
+	Follow below commands
+
+	curl -LO "https://dl.k8s.io/release/v1.24.0/bin/windows/amd64/kubectl.exe"
+	curl -LO "https://dl.k8s.io/v1.24.0/bin/windows/amd64/kubectl.exe.sha256"
+	CertUtil -hashfile kubectl.exe SHA256
+	type kubectl.exe.sha256
+	
+	Check installation done properly - kubectl version --client
+
+
+Create kubectl cluster config
+kubectl config set-cluster e2e --server=127.0.0.1:8181
+
+create and assign context for e2e cluster
+kubectl config set-context e2eContext --cluster=e2e
+kubectl config get-contexts
+kubectl config use-context e2eContext
+kubectl config current-context
