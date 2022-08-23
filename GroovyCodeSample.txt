@@ -1,0 +1,85 @@
+//https://onecompiler.com/groovy/3ydb6j4n5
+//0.step(10,3){println "$it"}
+//0.upto(5){println "$it"}
+//5.times{println "$it"}
+
+def y = ["Guru99", "is", "Best", "for", "Groovy"]
+
+//y.add("Learning")
+//println(y.contains("is"))
+//println(y.size())
+//println(y.get(y.size()-1))
+//println(y.pop())
+//println(y.pop())
+//println(y)
+//newLit = y.minus(["is","for"])
+//newLitPlus = y.plus(["add","newItem"])
+//println("newList: "+newLit)
+//println("oldList: "+y)
+//println("newLitPlus: "+newLitPlus)
+//println("reverse: "+y.reverse())
+//y.each{  value ->
+//  println value
+//}
+
+//foreach item in list:
+//  print(item)
+
+//Maps
+
+//def newMap = [name:"Vale name1", adress:"value adress1"]
+//newMap.each{key,  value ->
+//  println(key + ":" +value)
+//}
+//println(newMap.containsKey("name"))
+//println(newMap.get("adress"))
+//newMap.put(["Phone","1234567890"])
+//newMap.put("Phone", "1234567890")
+//println(newMap.keySet())
+//println(newMap.values())
+
+//Functions
+
+//def Add = {
+//       a,b->
+//       sum = (a+b)
+//       return sum
+//}
+//def Sub = {
+//       a,b->
+//       sub = (a-b)
+//       return sub
+//}
+//
+//sum = Add(1,2)
+//sub = Sub(5,2)
+//println(sum)
+//println(sub)
+
+-----------------------------
+public class MathOperation{
+  int sum;
+  int sub;
+  
+  def Initilize = {
+    Add(5,2);
+    Subraction(10,2);
+  }
+  
+  private def Add = {
+         a,b->
+         sum = (a+b)
+         //return sum
+  }
+  private def Subraction = {
+         a,b->
+         sub = (a-b)
+         //return sub
+  }
+}
+
+def operation = new MathOperation();
+operation.Initilize();
+
+println("Sum: $operation.sum")
+println("Sub: "+operation.sub)
